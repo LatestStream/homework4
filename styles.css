@@ -12,7 +12,7 @@ h2 {
     
 }
 
-p {
+main p {
     max-width: 450px;
     word-wrap:  break-word;
 }
@@ -38,12 +38,10 @@ nav {
 
 nav ul li {
     margin: 2rem 0;
+    color: white;
+    font-family:'Courier New', Courier, monospace
 }
 
-nav a {
-    color: white;
-    font-family:'Courier New', Courier, monospace;
-}
 
 .skills-container {
     display: flex;
@@ -86,24 +84,6 @@ nav a {
     transition: transform 0.4s ease, box-shadow 0.3s ease;
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 1rem;
-}
-
-
-.project img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-}
-
-.project-info {
-    padding: 10px;
-}
-
 main {
     grid-area: main;
     padding: 1rem;
@@ -111,15 +91,16 @@ main {
 }
 
 footer {
-    display: flex;
-    grid-area: footer;
     justify-content: center;
     align-items: center;
+    grid-area: footer;
     background: #508D4E;
     color: white;
     text-align: center;
     padding: 1rem;  
 }
+
+
 
 button {
     background-color: forestgreen;
@@ -197,5 +178,9 @@ button:hover {
     }
     nav ul li{
         text-align: center;
+    }
+
+    footer{
+        font-size: 12px;
     }
 }
